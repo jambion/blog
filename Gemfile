@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 gem 'simple_form', '~> 3.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
