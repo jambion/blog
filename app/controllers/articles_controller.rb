@@ -7,6 +7,7 @@ class ArticlesController < ApplicationController
   
   def show
     # @article = Article.find(params[:id])
+    @tags = @article.tags
   end
   
   def new
@@ -57,7 +58,7 @@ private
     @article = Article.find(params[:id])
   end
   def article_params
-    params.require(:article).permit(:title, :description)
+    params.require(:article).permit(:title, :description, :tag_list)
   end
 
 end
